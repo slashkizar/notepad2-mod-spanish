@@ -2395,6 +2395,7 @@ EDITLEXER lexYAML = { SCLEX_YAML, 63355, L"YAML", L"yaml; yml", L"", &KeyWords_Y
                       { SCE_YAML_OPERATOR, 63132, L"Operator", L"fore:#333366", L"" },
                       { -1, 00000, L"", L"", L"" } } };
 
+
 KEYWORDLIST KeyWords_VHDL = {
 "access after alias all architecture array assert attribute begin block body buffer bus case component configuration "
 "constant disconnect downto else elsif end entity exit file for function generate generic group guarded if impure in "
@@ -2428,6 +2429,26 @@ EDITLEXER lexVHDL = { SCLEX_VHDL, 63370, L"VHDL", L"vhdl; vhd", L"", &KeyWords_V
                        { SCE_VHDL_STDTYPE, 63375, L"Standard type", L"fore:#FF8000", L"" },
                        { -1, 00000, L"", L"", L"" } } };
 
+
+KEYWORDLIST KeyWords_MATLAB = {
+"break case catch continue else elseif end for function global if otherwise "
+"persistent return switch try while",
+"", "", "", "", "", "", "", "" };
+
+
+EDITLEXER lexMATLAB = { SCLEX_MATLAB, 63360, L"MATLAB", L"matlab", L"", &KeyWords_MATLAB, {
+                        { STYLE_DEFAULT, 63126, L"Default", L"", L"" },
+                        //{ SCE_MATLAB_DEFAULT, L"Default", L"", L"" },
+                        { SCE_MATLAB_COMMENT, 63127, L"Comment", L"fore:#008000", L"" },
+                        { SCE_MATLAB_COMMAND, 63236, L"Command", L"bold", L"" },
+                        { SCE_MATLAB_NUMBER, 63130, L"Number", L"fore:#FF8000", L"" },
+                        { SCE_MATLAB_KEYWORD, 63128, L"Keyword", L"fore:#00007F; bold", L"" },
+                        { MULTI_STYLE(SCE_MATLAB_STRING,SCE_MATLAB_DOUBLEQUOTESTRING,0,0), 63131, L"String", L"fore:#7F007F", L"" },
+                        { SCE_MATLAB_OPERATOR, 63132, L"Operator", L"", L"" },
+                        { SCE_MATLAB_IDENTIFIER, 63129, L"Identifier", L"", L"" },
+                        { -1, 00000, L"", L"", L"" } } };
+
+
 // This array holds all the lexers...
 // Don't forget to change the number of the lexer for HTML and XML
 // in Notepad2.c ParseCommandLine() if you change this array!
@@ -2452,6 +2473,7 @@ PEDITLEXER pLexArray[NUMLEXERS] =
   &lexJS,
   &lexMAK,
   &lexMARKDOWN,
+  &lexMATLAB,
   &lexLATEX,
   &lexLUA,
   &lexNSIS,
