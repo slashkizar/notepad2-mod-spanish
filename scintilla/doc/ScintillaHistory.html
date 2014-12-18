@@ -463,6 +463,8 @@
       </tr><tr>
 	<td>Erik Angelin</td>
 	<td>Yusuf Ramazan Karagöz</td>
+	<td>Markus Heidelberg</td>
+	<td>Joe Mueller</td>
     </tr>
     </table>
     <p>
@@ -473,6 +475,44 @@
         <a href="http://sourceforge.net/projects/icon-collection/">
         Icons</a> Copyright(C) 1998 by Dean S. Jones<br />
       </li>
+    </ul>
+    <h3>
+       <a href="http://prdownloads.sourceforge.net/scintilla/scite352.zip?download">Release 3.5.2</a>
+    </h3>
+    <ul>
+	<li>
+	Released 2 December 2014.
+	</li>
+	<li>
+	Lexer added for Motorola S-Record files.
+	<a href="http://sourceforge.net/p/scintilla/feature-requests/1091/">Feature #1091.</a>
+	</li>
+	<li>
+	C++ folder allows folding on square brackets '['.
+	<a href="http://sourceforge.net/p/scintilla/feature-requests/1087/">Feature #1087.</a>
+	</li>
+	<li>
+	Shell lexer fixes three issues with here-documents.
+	<a href="http://sourceforge.net/p/scintilla/bugs/1672/">Bug #1672</a>.
+	</li>
+	<li>
+	Verilog lexer highlights doc comment keywords; has separate styles for input, output, and inout ports;
+	and fixes a bug in highlighting numbers.
+	</li>
+	<li>
+	When the calltip window is taller than the Scintilla window, leave it in a
+	position that avoids overlapping the Scintilla text.
+	</li>
+	<li>
+	When a text margin is displayed, for annotation lines, use the background colour of the base line.
+	</li>
+	<li>
+	Reverted a fix on Qt where Qt 5.3 has returned to the behaviour of 4.x.
+	<a href="http://sourceforge.net/p/scintilla/bugs/1575/">Bug #1575</a>.
+	</li>
+	<li>
+	On Windows and GTK+, use indicators for inline IME.
+	</li>
     </ul>
     <h3>
        <a href="http://prdownloads.sourceforge.net/scintilla/scite352.zip?download">Release 3.5.2</a>
@@ -498,6 +538,7 @@
 	<li>
 	ANNOTATION_INDENTED added which is similar to ANNOTATION_BOXED in terms of positioning
 	but does not show a border.
+	<a href="http://sourceforge.net/p/scintilla/feature-requests/1086/">Feature #1086.</a>
 	</li>
 	<li>
 	Allow platform overrides for drawing tab arrows, wrap markers, and line markers.
