@@ -63,7 +63,7 @@ IDC_COPY                CURSOR                  "..\\res\\Copy.cur"
 
 IDR_MAINWND MENU
 BEGIN
-    POPUP "&Archivo"
+    POPUP "&FIle"
     BEGIN
         MENUITEM "&New\tCtrl+N",                IDM_FILE_NEW
         MENUITEM "&Open...\tCtrl+O",            IDM_FILE_OPEN
